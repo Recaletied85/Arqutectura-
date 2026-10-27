@@ -68,7 +68,7 @@ int main(void) {
         que cada parte dure el mismo tiempo*/
         uint16_t total = pgm_read_word(&velocidades[modo]) / 4;
 
-        // 3. Ejecutamos el estado actual en 4 sub-ciclos usando las 2 columnas de tu matriz
+        // Ejecutamos el estado actual 
         for (uint8_t i = 0; i < 4; i++) {
             //primero el for es para hacer 4 subcilos
             // con el i%2 hacemos que se divida de entre 2 y se redonde, 
