@@ -11,9 +11,9 @@
 // PC5, PC4, PC3
 
 const uint16_t velocidades[3] PROGMEM = {
-    1000, // Velocidad 1 en el switch 00
-    500,  // Velocidad 2 en el switch 01
-    2000   // Velocidad 3 en el switch 10
+    1000, // Velocidad 1 en el switch normal /00
+    500,  // Velocidad 2 en el switch mucho trafico /01
+    2000  // Velocidad 3 en el switch  bajo trafico /10
 };
 
 const uint8_t estados[6][2] PROGMEM = {
@@ -28,7 +28,7 @@ const uint8_t estados[6][2] PROGMEM = {
 
 const uint8_t transiciones[6][2] PROGMEM = {
     //la 2 columna representa si el 1 de peaton esta activado o no
-    {1, 1}, 
+    {1, 1}, // de s0 pasa a s1 
     {2, 2}, // De S1 pasa a S2
     {3, 3}, // De S2 pasa a S3
     {4, 4}, // De S3 pasa a S4
