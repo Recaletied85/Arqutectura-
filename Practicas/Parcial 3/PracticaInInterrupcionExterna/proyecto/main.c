@@ -26,7 +26,7 @@ int main(void) {
     // Cambiar el caso de int0 
 //-----------------------------------------------
     // bajo
-    EICRA = 0; 
+    //EICRA = 0; 
 
     // logico
     //EICRA = (1 << ISC00); 
@@ -36,7 +36,7 @@ int main(void) {
 
     
     // flanco arriba
-    //EICRA = (1 << ISC01) | (1 << ISC00); 
+    EICRA = (1 << ISC01) | (1 << ISC00); 
 //-----------------------------------------
     // limpiamos el int0
     EIFR = (1 << INTF0);          
